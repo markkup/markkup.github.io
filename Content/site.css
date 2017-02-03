@@ -1,5 +1,5 @@
 ﻿body  { 
-	background-image: url(/images/bkg.jpg);
+	background-image: url(/Images/bkg.jpg);
     font-size: 11px;
 }
 .container  { 
@@ -21,7 +21,7 @@ header {
 }
 
 #logo {
-	background-image: url(/images/head-logo.png);
+	background-image: url(/Images/head-logo.png);
 	width: 300px;
 	height: 100px;
 	background-repeat: no-repeat;
