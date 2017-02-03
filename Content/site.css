@@ -1,0 +1,124 @@
+﻿body  { 
+	background-image: url(/images/bkg.jpg);
+    font-size: 11px;
+}
+.container  { 
+	margin-top: 10px;  
+	padding-top: 50px;
+}
+
+header {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 42px;
+	background: #333;
+	/* for IE */
+	filter:alpha(opacity=60);
+	zoom: 1;
+	/* CSS3 standard */
+	opacity:0.6;
+}
+
+#logo {
+	background-image: url(/images/head-logo.png);
+	width: 300px;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-position: 25px 25px;
+}
+
+#heading #title {
+	margin-top: 23px;
+}
+
+#heading #title h1 {
+	font-size: 3.0em;
+	font-family: 'Arimo', 'Arial'
+}
+
+.content {
+	margin-top:40px;
+}
+
+.content h2 {
+	font-size: 1.6em;
+	font-weight: bold;
+	margin-top: 0px;
+	color: #333;
+	font-family: 'Arial', 'Arial'
+}
+
+.content h3 {
+	margin-bottom: 4px;
+}
+
+.content h4 {
+	font-size: 0.9em;
+	color: #777;
+	margin-bottom: 10px;
+}
+
+.content .area {
+	display: block;
+	font-style: italic;
+    margin-top: 8px;
+	margin-right:34px;
+	text-align: right;
+	text-transform: uppercase;
+	color: #777;
+	font-size: 1.0em;
+	font-weight: none;
+	font-family: 'Arimo', 'Arial'
+}
+
+.pic {
+	margin-bottom: 10px;
+}
+
+.pic img {
+	display: block;
+	border: 1px solid #bbb;
+	padding: 5px;
+}
+
+p.big {
+	font-size: 120%;
+	line-height: 130%;
+}
+
+p.bigger {
+	font-size: 130%;
+}
+
+p.biggest {
+	font-size: 150%;
+	line-height: 140%;	
+}
+
+.content .left-column {
+	width: 250px;
+	float: left;
+	margin-right: 25px;
+}
+
+.content .right-column {
+	width: 250px;
+	float: right;
+}
+
+#message {
+	width: 520px;
+	height: 100px;
+}
+
+#contact_status {
+	background: #eee;
+	padding: 10px;
+	border: 1px solid #bbb;
+	margin: 10px 0;
+}
+
+footer {
+    height: 120px;
+}
