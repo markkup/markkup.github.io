@@ -1,192 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-		<title>Markkup - Software Design and Development</title>
+<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script src="js/respodnd.min.js"></script>
+		<title>Markkup | web-connected application development</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/site.css">
+	</head>
+	<body>
+		
+		<header>
+			<img class="logo" src="images/markkup-logo-light.png" style="width:150px;" alt="markkup" />
+		</header>
 
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="description" content="Markkup is a new software company specializing in web-connected applications on a .NET stack.">
-		<meta name="copyright" content="&#169; 2010 Markkup, Inc"> 
-		<meta name="rating" content="general"> 
-		<meta name="robots" content="all, index, follow">
-		<meta name="google-site-verification" content="DOZeYJQEbBQ00ydQtJ3rp4xJC8P4Yn-6C9tQPebhXQY">
-
-        <link rel="stylesheet" type="text/css" href="/Content/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="/Content/site.css" />
-        <link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
-
-        <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
-        <script src="/Scripts/modernizr-2.5.3.js"></script>
-        <script src="/Scripts/jquery-1.7.1.min.js"></script>
-
-        
-        
-        <meta name="viewport" content="width=device-width" />
-    </head>
-    <body>
-		<header></header>
-        
-
-		<div class="container">
-			<section class="span12 last" id="heading">
-				<div class="span4">
-					<div id="logo">
-						<a href="http://markkup.com/"></a>
-					</div>
+		<section class="content">
+			<h1>Hello. We are a software company specializing in web-connected applications.</h1>
+			<h3>Working with clients like...</h3>
+			<ul class="clients">
+				<li>BankMobile</li>
+				<li>Masonic Villages</li>
+				<li>CertaPro</li>
+				<li>Berk-Tek</li>
+				<li>Clipper Magazine</li>
+				<li>Giant Foods</li>
+			</ul>
+			<h3>Get In touch</h3>
+			<form id="emailform" action="//flipmail.co/api/EaLsnpG3G1wAVnT98Llt" method="post">
+				<div class="row">
+					<div class="small"><input type="text" name="name" id="name" placeholder="Name" /></div>
+					<div class="small"><input type="email" name="email" id="email" placeholder="Email" /></div>
+					<div><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+					<input type="hidden" name="_after" value="http://markkup.com/confirm/">
 				</div>
-				<div class="span7" id="title">
-					<h1>Hello. We are a new software company specializing in web-connected applications.</h1>
+				
+				<div class="row">
+					<div id="formsuccess" class="form-group" style="display: none;color:#49bf9d;">Your contact inquiry was successfully submitted</div>
+					<div id="formerror" class="form-group" style="display: none;color:darkred;">There was an error submitting your contact inquiry</div>
+					<div id="forminvalid" class="form-group" style="display: none;color:orange;">Your name and email address are required</div>
 				</div>
-			</section>
-			<section class="span12 last content" id="do">
-
-				<!--<section class="span4">
-					<span class="area">March 26, 2012</span>
-				</section>
-				<section class="span7">
-					<h2>Giant Foods Healthy Ideas Magazibne for the iPad</h2>
-					<p class="bigger">
-						We built a digital version of Giant's Healthy Ideas magazine for the iPad with C# using the MonoTouch platform.
-						<a href="http://itunes.apple.com/us/app/healthy-ideas-magazine-from/id511213204?ls=1&mt=8">Check it out on iTunes</a>
-					</p>
-				</section>
-
-				<section class="span4">
-					<span class="area">January 2, 2012</span>
-				</section>
-				<section class="span7">
-					<h2>Loggr on Herding Code</h2>
-					<p class="bigger">
-						The Herding Code podcast with Jon Galloway and Kevin Dente was posted. We spend most of the time talking about Loggr.
-						<a href="http://herdingcode.com/?p=375">Check it out</a>
-					</p>
-				</section>
-
-				<section class="span4">
-					<span class="area">October 18, 2011</span>
-				</section>
-				<section class="span7">
-					<h2>Loggr is first round winner for Rapleaf Personalization Fund</h2>
-					<p class="bigger">
-						Loggr is now live with Rapleaf data used to personalize the Live User Monitoring. We were selected as
-						a first round winner of their Personalization Fund. <a href="http://blog.rapleaf.com/blog/2011/10/18/congrats-to-our-first-round-winners-for-the-personalization-fund/">View the article</a>
-					</p>
-				</section>
 				
-				<section class="span4">
-					<span class="area">November 12, 2011</span>
-				</section>
-				<section class="span7">
-					<h2>Cornerstone website launched</h2>
-					<p class="bigger">
-						Markkup built the client workspaces for this website, built on top of the SiteFinity CMS.
-						<a href="http://www.cornerstoneadminisystems.com/">http://www.cornerstoneadminisystems.com</a>
-					</p>
-				</section>
-
-				<section class="span4">
-					<span class="area">November 6, 2011</span>
-				</section>
-				<section class="span7">
-					<h2>Orrstown Bank website launched</h2>
-					<p class="bigger">
-						Markkup built the rate management tools which drives the rate information for this website.
-						<a href="http://www.orrstown.com/">http://www.orrstown.com</a>
-					</p>
-				</section>
-
-				<section class="span4">
-					<span class="area">July 19, 2011</span>
-				</section>
-				<section class="span7">
-					<h2>Loggr has launched</h2>
-					<p class="bigger">
-						Loggr is realtime, hosted monitoring for web applications and we're now open for public use. Please try it out for free.
-						<a href="http://loggr.net/">http://loggr.net</a>
-					</p>
-				</section>
-
-				<section class="span4">
-					<span class="area">June 15, 2011</span>
-				</section>
-				<section class="span7">
-					<h2>DoubleTakeDeals Merchant iPhone app launched</h2>
-					<p class="bigger">
-						This is our first iPhone app we've done for a client. We built it using Monotouch and C#. What a great platform.
-					</p>
-				</section>
-
-				<section class="span4">
-					<span class="area">March 18, 2011</span>
-				</section>
-				<section class="span7">
-					<h2>Beta testing Loggr</h2>
-					<p class="bigger">
-						We've been heads-down over the last 12 months, working on a new project, and we're ready to go. Please
-						check out what we've been up to at <a href="http://loggr.net">http://loggr.net</a>.
-					</p>
-				</section>
-				
-				<section class="span4">
-					<span class="area">November 8, 2010</span>
-				</section>
-				<section class="span7">
-					<h2>DoubleTakeDeals website launched</h2>
-					<p class="bigger">
-						DoubleTakeDeals is a coupon website we're helping to develop for our client, Clipper Magazine. It
-						will be launching in over 400 markets nationwide in 2011. <a href="http://www.doubletakedeals.com">http://www.doubletakedeals.com</a>.
-					</p>
-				</section>
-				
-				<section class="span4">
-					<span class="area">April 8, 2010</span>
-				</section>
-				<section class="span7">
-					<h2>Check back in a bit...</h2>
-					<p class="bigger">
-						Markkup is a small, creative software design and development team based in Lancaster, Pennsylvania. 
-						We are hard at work on some cool, local projects and our website is playing catchup.
-					</p>
-				</section>-->
-				
-				<section class="span4">
-					<span class="area">&nbsp;</span>
-				</section>
-				<section class="span7">
-					<h2>Helping Companies Like...</h2>
-                    <p class="big">
-					BankMobile, Masonic Villages, CertaPro, Berk-Tek, ClipperMagazine, Giant Foods
-					</p>
-				</section>
-				
-				<section class="span4">
-					<span class="area">&nbsp;</span>
-				</section>
-				<section class="span7">
-                    <h2>Contact Info</h2>
-					<p class="big">
-						355 East Liberty Street<br>
-						Suite 200<br>
-						Lancaster, PA 17602<br>
-						<a href="mailto:info@markkup.com">info@markkup.com</a><br>
-						1-717-201-2010 //phone<br>
-					</p>
-				</section>
-			</section>
-		</div>
-
-        <footer />
-        
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-17027567-2']);
-			_gaq.push(['_trackPageview']);
-
-			(function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-		</script>
-    </body>
+				<div class="row">
+					<button type="submit" class="button" id="submit" value="Send Message">Send</button>
+				</div>
+			</form>
+		</section>
+		
+		<footer id="footer">
+			<ul class="copyright">
+				<li>© Markkup 2017</li>
+			</ul>
+		</footer>
+		
+		<script src="js/jquery-1.12.1.min.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/form.js"></script>
+		<script src="js/site.js"></script>
+	</body>
 </html>
