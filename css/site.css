@@ -910,7 +910,7 @@ section.content h3 {
 	color: rgba(255, 255, 255, 0.9);
 }
 
-section.content .row {
+section.content > .row {
     margin-bottom: 30px;
 }
 
