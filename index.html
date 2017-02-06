@@ -1,47 +1,82 @@
 <!DOCTYPE html>
-<html>
-	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<script src="js/respond.min.js"></script>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Markkup | web-connected application development</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<script src="https://use.fontawesome.com/bcc65d42d2.js"></script>
 		<link rel="stylesheet" href="css/site.css">
 	</head>
-	<body>
-		
+	<body>	
 		<header>
 			<img class="logo" src="images/markkup-logo-light.png" style="width:150px;" alt="markkup" />
 		</header>
-
 		<section class="content">
 			<h1>Hello. We are a software company specializing in web-connected applications.</h1>
-			<h3>Working with clients like...</h3>
-			<ul class="clients">
-				<li>BankMobile</li>
-				<li>Masonic Villages</li>
-				<li>CertaPro</li>
-				<li>Berk-Tek</li>
-				<li>Clipper Magazine</li>
-				<li>Giant Foods</li>
-			</ul>
-			<h3>Get In touch</h3>
-			<form id="emailform" action="//flipmail.co/api/EaLsnpG3G1wAVnT98Llt" method="post">
-				<div class="row">
-					<div class="small"><input type="text" name="name" id="name" placeholder="Name" /></div>
-					<div class="small"><input type="email" name="email" id="email" placeholder="Email" /></div>
-					<div><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-					<input type="hidden" name="_after" value="http://markkup.com/confirm/">
+			<div class="row">
+				<div class="col-sm-6">
+					<h3>Some of our Clients</h3>
+					<ul class="clients">
+						<li>BankMobile</li>
+						<li>Masonic Villages</li>
+						<li>CertaPro</li>
+						<li>Berk-Tek</li>
+						<li>Clipper Magazine</li>
+						<li>Giant Foods</li>
+					</ul>
 				</div>
-				
-				<div class="row">
-					<div id="formsuccess" class="form-group" style="display: none;color:#49bf9d;">Your contact inquiry was successfully submitted</div>
-					<div id="formerror" class="form-group" style="display: none;color:darkred;">There was an error submitting your contact inquiry</div>
-					<div id="forminvalid" class="form-group" style="display: none;color:orange;">Your name and email address are required</div>
+				<div class="col-sm-6">
+					<h3>Our Location</h3>
+					<div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+					<div class="details">
+						355 East Liberty Street<br>
+						Suite 200<br>
+						Lancaster, PA 17602
+					</div>
+					<div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+					<div class="details">
+						<a href="mailto:info@markkup.com">info@markkup.com</a>
+					</div>
+					<div class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+					<div class="details">
+						1-717-201-2010
+					</div>
 				</div>
-				
-				<div class="row">
-					<button type="submit" class="button" id="submit" value="Send Message">Send</button>
+			</div>
+			<div class="row">
+				<div class="col">
+					<h3>Get In Touch</h3>
+					<form id="emailform" action="//flipmail.co/api/EaLsnpG3G1wAVnT98Llt" method="post">
+						
+						<div class="row indented">
+							<div class="col-small-6">
+								<input type="text" name="name" id="name" placeholder="Name" />
+							</div>
+							<div class="col-small-6">
+								<input type="email" name="email" id="email" placeholder="Email" />
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col">
+								<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+								<input type="hidden" name="_after" value="http://markkup.com/confirm.html">
+							</div>
+						</div>
+						
+						<div class="row indented">
+							<div id="formsuccess" class="form-group" style="display: none;color:#49bf9d;">Your contact inquiry was successfully submitted</div>
+							<div id="formerror" class="form-group" style="display: none;color:darkred;">There was an error submitting your contact inquiry</div>
+							<div id="forminvalid" class="form-group" style="display: none;color:orange;">Your name and email address are required</div>
+						</div>
+						
+						<div class="row indented">
+							<button type="submit" class="button" id="submit" value="Send Message">Send</button>
+						</div>
+					</form>
 				</div>
-			</form>
+			</div>
 		</section>
 		
 		<footer id="footer">
